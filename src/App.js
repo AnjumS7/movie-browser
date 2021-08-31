@@ -9,7 +9,7 @@ import SearchEntryContextProvider from './contexts/SearchEntryContext';
 
 const App = () => {
   return(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       
         <MovieContextProvider>
             <SearchEntryContextProvider>
